@@ -1,0 +1,109 @@
+@media (min-width: 1720px) {
+    
+}
+
+/* Normal desktop :. */
+@media (min-width: 1200px) {
+    
+}
+
+/* Mini desktop :1200px. */
+@media (max-width: 1200px) {
+    
+}
+ 
+/* Tablet :991px. */
+@media (max-width: 991px) {
+    
+}
+ 
+/* Large mobile :767px. */
+@media (max-width: 767px) {
+  // default styles
+  body {
+    line-height: 1.5;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  // home
+  .home-banner-area {
+    img {
+      height: 600px;
+    }
+    .carousel-caption {
+      top: 90px;
+    }
+  }
+  .home-banner-area {
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+  .tour-places-area,
+  .photo-gallery-area {
+    padding-top: 40px;
+  }
+  .photo-gallery-area {
+    .slider-item img {
+      height: 300px;
+    }
+  }
+  .tour-videos-area {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .footer-area {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  // page header
+  .page-header-area img {
+    height: 260px;
+  }
+
+  // details page
+  .place-details-area  {
+    padding: 20px 0;
+  }
+
+  .video-details-page-header {
+    width: 80% !important;
+  }
+
+  // contact page
+  .get-in-touch-area,
+  .contact-medium-area {
+    padding: 30px 0;
+  }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 576px) {
+    
+}
+ 
+/* small mobile :576px. */
+@media (max-width: 576px) {
+    
+}
+
+@media only screen and (max-width: 479px){
+    
+}

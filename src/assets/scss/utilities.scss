@@ -1,0 +1,212 @@
+// extra padding
+.pt {
+  @for $i from 6 through 200 {
+    &-#{$i} { padding-top: #{$i}px; }
+  }
+}
+.pb {
+  @for $i from 6 through 200 {
+    &-#{$i} { padding-bottom: #{$i}px; }
+  }
+}
+// extra margin
+.mt {
+  @for $i from 6 through 200 {
+    &-#{$i} { margin-top: #{$i}px; }
+  }
+}
+.mb {
+  @for $i from 6 through 200 {
+    &-#{$i} { margin-bottom: #{$i}px; }
+  }
+}
+
+// color variables
+$blue: #3A78C9;
+$orange: #f05942;
+$red: #ea3248;
+$black: #333;
+$ash: #727272;
+$white: #fff;
+
+// default styles
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+* {
+	transition: 0.4s;
+}
+html {
+	scroll-behavior: smooth;
+}
+ body {
+	font-family: 'Nunito', sans-serif;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.8;
+	color: $black;
+	font-weight: 400;
+	position: relative;
+}
+.img {
+	transition: all 0.4s ease-out 0s;
+	image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+a,
+.button {
+	-webkit-transition: all 0.4s ease-out 0s;
+	-moz-transition: all 0.4s ease-out 0s;
+	-ms-transition: all 0.4s ease-out 0s;
+	-o-transition: all 0.4s ease-out 0s;
+	transition: all 0.4s ease-out 0s;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	color: $black;
+	text-decoration: none;
+}
+a,
+button {
+	color: $black;
+	outline: medium none;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0px;
+	font-style: normal;
+	text-transform: normal;
+	color: $black;
+	font-weight: 500;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 60px;
+	font-weight: 700;
+}
+h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+h3 {
+	font-size: 40px;
+	font-weight: 700;
+}
+h4 {
+	font-size: 22px;
+	font-weight: 600;
+}
+h5 {
+	font-size: 18px;
+	font-weight: 24px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none;
+}
+p {
+	margin-bottom: 0;
+}
+small {
+	font-size: 14px;
+}
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+// default colors
+.text-blue {
+  color: $blue;
+}
+.text-orange {
+  color: $orange;
+}
+.text-red {
+  color: $red;
+}
+.text-black {
+  color: $black;
+}
+.text-ash {
+  color: $ash;
+}
+
+/* button style */
+.btn {
+	background: $red none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 4px;
+	color: $white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	line-height: 1;
+	margin-bottom: 0;
+	padding: 18px 28px;
+	text-align: center;
+	touch-action: manipulation;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.btn:hover, .btn:focus {
+	background-color: #134587;
+}
+
+*::-moz-selection {
+	background: rgb(234 50 72 / 90%);
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: rgb(234 50 72 / 90%);
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: rgb(234 50 72 / 90%);
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
